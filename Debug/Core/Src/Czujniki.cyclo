@@ -1,0 +1,7 @@
+../Core/Src/Czujniki.c:23:9:IncPing	2
+../Core/Src/Czujniki.c:47:9:ImuPing	2
+../Core/Src/Czujniki.c:70:6:PSSetSeaLevelPressure	1
+../Core/Src/Czujniki.c:75:29:PSGetSeaLevelPressure	1
+../Core/Src/Czujniki.c:80:29:PSCalculateAlt	1
+../Core/Src/Czujniki.c:86:9:PsPing	2
+../Core/Src/Czujniki.c:102:9:PSRead	3

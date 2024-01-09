@@ -1,0 +1,7 @@
+../Core/Src/Czujniki.c:23:9:IncPing	16	static
+../Core/Src/Czujniki.c:47:9:ImuPing	16	static
+../Core/Src/Czujniki.c:70:6:PSSetSeaLevelPressure	16	static
+../Core/Src/Czujniki.c:75:29:PSGetSeaLevelPressure	4	static
+../Core/Src/Czujniki.c:80:29:PSCalculateAlt	24	static
+../Core/Src/Czujniki.c:86:9:PsPing	16	static
+../Core/Src/Czujniki.c:102:9:PSRead	32	static
