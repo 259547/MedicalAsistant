@@ -32,6 +32,8 @@
 
 #include "main.h"
 
+extern UART_HandleTypeDef hlpuart1;
+
 /* Variables */
 extern int __io_putchar(int ch) __attribute__((weak));
 extern int __io_getchar(void) __attribute__((weak));
@@ -83,20 +85,9 @@ __attribute__((weak)) int _write(int file, char *ptr, int len)
   (void)file;
   int DataIdx;
 
-  if(file < 3){ //stderr stdout
+  HAL_UART_Transmit(&hlpuart1, ptr, len, 100);
 
-
-	  for (DataIdx = 0; DataIdx < len; DataIdx++)
-	  {
-	    //ptr++;
-		  ITM_SendChar(*ptr++);
-	  }
-	  return len;
-
-
-  }
-
-
+  return len;
 
 }
 

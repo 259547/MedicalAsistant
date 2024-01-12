@@ -33,6 +33,34 @@ int32_t IncPing(void){
 	return 1;
 }
 
+void IncInit(void){
+	transfer In,Out;
+	Out.buf[0] = 0x10 | (0x00);
+	Out.buf[1] = 0x10;
+	//6Bh - who I am
+	SPIIncSend(Out.buf, In.buf, 2);
+
+	return;
+}
+
+float IncGetAngle(void){
+	float result;
+	char address = 0x28 | (0x80);
+	union {
+		char data[5];
+		struct{
+			char a;
+			int16_t values[2];
+		};
+	}receive;
+
+	SPIIncSend(&address, receive.data, 5);
+
+	result = atan2f ((float)receive.values[1],(float)receive.values[0]) * 180 / 3.141592653f;
+
+	return result;
+}
+
 
 
 
@@ -80,7 +108,7 @@ __attribute__((weak)) float PSGetSeaLevelPressure(void){
 __attribute__((weak)) float PSCalculateAlt(float pressure, float temp){
 
 
-	return ((pow((PSGetSeaLevelPressure() / pressure), 1/5.257) - 1.0) * (temp + 273.15)) / 0.0065;
+	return ((powf((PSGetSeaLevelPressure() / pressure), 1.0f/5.257f) - 1.0f) * (temp + 273.15f)) / 0.0065f;
 }
 
 int32_t PsPing(void){

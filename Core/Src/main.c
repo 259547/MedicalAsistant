@@ -19,9 +19,14 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "fatfs.h"
+#include "math.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+
+#define CRIT_ACC 	3f
+#define CRIT_ANGLE	30
+#define FILTER_A 	0.04
 
 /* USER CODE END Includes */
 
@@ -41,6 +46,10 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
+I2C_HandleTypeDef hi2c3;
+
+UART_HandleTypeDef hlpuart1;
+
 SD_HandleTypeDef hsd1;
 
 SPI_HandleTypeDef hspi2;
@@ -54,6 +63,8 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_SDMMC1_SD_Init(void);
 static void MX_SPI2_Init(void);
+static void MX_I2C3_Init(void);
+static void MX_LPUART1_UART_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -99,29 +110,54 @@ int main(void)
   MX_SDMMC1_SD_Init();
   MX_FATFS_Init();
   MX_SPI2_Init();
+  MX_I2C3_Init();
+  MX_LPUART1_UART_Init();
   /* USER CODE BEGIN 2 */
+
+  HAL_GPIO_WritePin(CS_IMU_GPIO_Port, CS_IMU_Pin, 1);
+  HAL_GPIO_WritePin(CS_PS_GPIO_Port, CS_PS_Pin, 1);
+  HAL_GPIO_WritePin(CS_INC_GPIO_Port, CS_INC_Pin, 1);
+
+  //Check I2C:
+  //Set beginning altitude:
+
   PSReading PSData;
   if(!PsPing()){
   		  PSRead(&PSData);
   		  PSSetSeaLevelPressure(PSData.pres);
-  	 }
+  }
+  IncInit();
+
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-
+  float filteredAlt=0, filteredAng=0,filteredAltOld;
   int x = 0;
+  float angle;
   while (1)
   {
-	  IncPing();
-	  ImuPing();
-	  if(!PsPing()){
-		  PSRead(&PSData);
+
+
+
+	  PSRead(&PSData);
+	  angle = IncGetAngle();
+
+	  //Filter:
+	  filteredAlt = filteredAlt * (1-FILTER_A) + FILTER_A * PSData.alt;
+	  filteredAng = filteredAng * (1-FILTER_A) + FILTER_A * angle;
+
+	  (void) angle;
+	  if((angle > CRIT_ANGLE) || ( (fabs(filteredAlt-filteredAltOld)*10) > CRIT_ACC))
+	  {
+		  printf("STAN KRYTYCZNY!\n");
 	  }
 
+	  printf("KAT,%3.1f,WYS,%1.1f,T,%3.1f\n",filteredAng,filteredAlt,PSData.temp);
 
-
-	  HAL_Delay(10);
+	  HAL_Delay(100);
+	  filteredAltOld = filteredAlt;
 
     /* USER CODE END WHILE */
 
@@ -177,6 +213,88 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
+}
+
+/**
+  * @brief I2C3 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_I2C3_Init(void)
+{
+
+  /* USER CODE BEGIN I2C3_Init 0 */
+
+  /* USER CODE END I2C3_Init 0 */
+
+  /* USER CODE BEGIN I2C3_Init 1 */
+
+  /* USER CODE END I2C3_Init 1 */
+  hi2c3.Instance = I2C3;
+  hi2c3.Init.Timing = 0xF010F3FE;
+  hi2c3.Init.OwnAddress1 = 0;
+  hi2c3.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+  hi2c3.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+  hi2c3.Init.OwnAddress2 = 0;
+  hi2c3.Init.OwnAddress2Masks = I2C_OA2_NOMASK;
+  hi2c3.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+  hi2c3.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
+  if (HAL_I2C_Init(&hi2c3) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Analogue filter
+  */
+  if (HAL_I2CEx_ConfigAnalogFilter(&hi2c3, I2C_ANALOGFILTER_ENABLE) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Digital filter
+  */
+  if (HAL_I2CEx_ConfigDigitalFilter(&hi2c3, 0) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN I2C3_Init 2 */
+
+  /* USER CODE END I2C3_Init 2 */
+
+}
+
+/**
+  * @brief LPUART1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_LPUART1_UART_Init(void)
+{
+
+  /* USER CODE BEGIN LPUART1_Init 0 */
+
+  /* USER CODE END LPUART1_Init 0 */
+
+  /* USER CODE BEGIN LPUART1_Init 1 */
+
+  /* USER CODE END LPUART1_Init 1 */
+  hlpuart1.Instance = LPUART1;
+  hlpuart1.Init.BaudRate = 115200;
+  hlpuart1.Init.WordLength = UART_WORDLENGTH_8B;
+  hlpuart1.Init.StopBits = UART_STOPBITS_1;
+  hlpuart1.Init.Parity = UART_PARITY_NONE;
+  hlpuart1.Init.Mode = UART_MODE_TX_RX;
+  hlpuart1.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+  hlpuart1.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
+  hlpuart1.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
+  if (HAL_UART_Init(&hlpuart1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN LPUART1_Init 2 */
+
+  /* USER CODE END LPUART1_Init 2 */
+
 }
 
 /**
@@ -261,8 +379,8 @@ static void MX_GPIO_Init(void)
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOH_CLK_ENABLE();
   __HAL_RCC_GPIOC_CLK_ENABLE();
-  __HAL_RCC_GPIOB_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
+  __HAL_RCC_GPIOB_CLK_ENABLE();
   __HAL_RCC_GPIOD_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */

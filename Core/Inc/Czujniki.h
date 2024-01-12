@@ -20,9 +20,18 @@ typedef struct{
 	float alt;
 }PSReading;
 
+
+
+
 int32_t PSRead(PSReading * data);
 void PSSetSeaLevelPressure(float pressure);
 float PSGetSeaLevelPressure(void);
 float PSCalculateAlt(float pressure, float temp);
+
+
+////// INC //////
+int32_t IncPing(void);
+void IncInit(void);
+float IncGetAngle(void);
 
 #endif /* INC_CZUJNIKI_H_ */
