@@ -1,0 +1,3 @@
+../Core/Src/LEDY.c:23:13:LED_ENABLE	16	static
+../Core/Src/LEDY.c:37:13:LED_DISABLE	16	static
+../Core/Src/LEDY.c:51:6:LEDChangeState	32	static

@@ -41,7 +41,7 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  18 .debug_line   000193f0  00000000  00000000  0005fa7e  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_str    000d11e0  00000000  00000000  00078e6e  2**0
+ 19 .debug_str    000d11df  00000000  00000000  00078e6e  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  20 .debug_frame  000061a8  00000000  00000000  0014a050  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
@@ -1950,7 +1950,7 @@ int main(void)
  8001414:	3feeb851 	.word	0x3feeb851
  8001418:	47ae147b 	.word	0x47ae147b
  800141c:	3fa47ae1 	.word	0x3fa47ae1
- 8001420:	a0000000 	.word	0xa0000000
+ 8001420:	9999999a 	.word	0x9999999a
  8001424:	3fe99999 	.word	0x3fe99999
  8001428:	48000400 	.word	0x48000400
  800142c:	40240000 	.word	0x40240000

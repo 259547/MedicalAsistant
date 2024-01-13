@@ -24,7 +24,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
-#define CRIT_ACC 	3f
+#define CRIT_ACC 	0.8
 #define CRIT_ANGLE	30
 #define FILTER_A 	0.04
 

@@ -236,6 +236,162 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 ./Core/Src/Czujniki.o
  .text.IncPing  0x0000000000000000       0x2e ./Core/Src/Czujniki.o
  .text.ImuPing  0x0000000000000000       0x32 ./Core/Src/Czujniki.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .group         0x0000000000000000        0xc ./Core/Src/LEDY.o
+ .text          0x0000000000000000        0x0 ./Core/Src/LEDY.o
+ .data          0x0000000000000000        0x0 ./Core/Src/LEDY.o
+ .bss           0x0000000000000000        0x0 ./Core/Src/LEDY.o
+ .data.rejestryLedow
+                0x0000000000000000        0x8 ./Core/Src/LEDY.o
+ .data.LEDS_ADDRESSES
+                0x0000000000000000        0x4 ./Core/Src/LEDY.o
+ .text.LED_ENABLE
+                0x0000000000000000       0x90 ./Core/Src/LEDY.o
+ .text.LED_DISABLE
+                0x0000000000000000       0x98 ./Core/Src/LEDY.o
+ .text.LEDChangeState
+                0x0000000000000000       0xac ./Core/Src/LEDY.o
+ .debug_info    0x0000000000000000      0x74d ./Core/Src/LEDY.o
+ .debug_abbrev  0x0000000000000000      0x1b6 ./Core/Src/LEDY.o
+ .debug_aranges
+                0x0000000000000000       0x30 ./Core/Src/LEDY.o
+ .debug_rnglists
+                0x0000000000000000       0x22 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000      0x356 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000      0xaa8 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000      0x1b3 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0x2e ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0x28 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0x22 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0x8e ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0x51 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000      0x103 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0x6a ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000      0x1df ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0x1c ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0x22 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0xfb ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000     0x1011 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000      0x11f ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000    0x1511c ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0x6d ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000     0x38e6 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000      0x174 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0x5c ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000     0x1328 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000      0x5a5 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000      0x1b9 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000      0x11b ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000      0x26b ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000      0x23d ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000      0x241 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000      0x375 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0xd6 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000      0x22c ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0x61 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0xa5 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000      0x122 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000      0x2ee ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000      0x77a ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000      0x1d5 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000      0x2fe ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000      0x5cf ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0x44 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000      0x26d ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0x61 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0x2a ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0x43 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0x34 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0x16 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0x35 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000      0x369 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0x10 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0x16 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0x43 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0x34 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0x10 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0x58 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0x8e ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0x1c ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000      0x177 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0x16 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0x16 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000      0x147 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0x16 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0x16 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0x29 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0x16 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0x20 ./Core/Src/LEDY.o
+ .debug_macro   0x0000000000000000       0x28 ./Core/Src/LEDY.o
+ .debug_line    0x0000000000000000      0xa25 ./Core/Src/LEDY.o
+ .debug_str     0x0000000000000000    0xc8cb9 ./Core/Src/LEDY.o
+ .comment       0x0000000000000000       0x44 ./Core/Src/LEDY.o
+ .debug_frame   0x0000000000000000       0x88 ./Core/Src/LEDY.o
+ .ARM.attributes
+                0x0000000000000000       0x34 ./Core/Src/LEDY.o
  .group         0x0000000000000000        0xc ./Core/Src/SPI.o
  .group         0x0000000000000000        0xc ./Core/Src/SPI.o
  .group         0x0000000000000000        0xc ./Core/Src/SPI.o
@@ -5776,6 +5932,7 @@ LOAD D:/STM32/STM32CubeIDE_1.13.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.
 LOAD D:/STM32/STM32CubeIDE_1.13.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 LOAD D:/STM32/STM32CubeIDE_1.13.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
 LOAD ./Core/Src/Czujniki.o
+LOAD ./Core/Src/LEDY.o
 LOAD ./Core/Src/SPI.o
 LOAD ./Core/Src/main.o
 LOAD ./Core/Src/stm32l4xx_hal_msp.o
@@ -7371,56 +7528,56 @@ LOAD D:/STM32/STM32CubeIDE_1.13.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.
  .debug_line    0x0000000000017e4f      0xafb ./FATFS/Target/sd_diskio.o
  .debug_line    0x000000000001894a      0xaa6 ./Middlewares/Third_Party/FatFs/src/ff_gen_drv.o
 
-.debug_str      0x0000000000000000    0xd11e0
+.debug_str      0x0000000000000000    0xd11df
  .debug_str     0x0000000000000000    0xc8e2d ./Core/Src/Czujniki.o
                                       0xc9112 (size before relaxing)
  .debug_str     0x00000000000c8e2d      0x413 ./Core/Src/SPI.o
                                       0xc8c33 (size before relaxing)
- .debug_str     0x00000000000c9240     0x13bf ./Core/Src/main.o
-                                      0xca940 (size before relaxing)
- .debug_str     0x00000000000ca5ff      0x2a2 ./Core/Src/stm32l4xx_hal_msp.o
+ .debug_str     0x00000000000c9240     0x13be ./Core/Src/main.o
+                                      0xca93f (size before relaxing)
+ .debug_str     0x00000000000ca5fe      0x2a2 ./Core/Src/stm32l4xx_hal_msp.o
                                       0xc9651 (size before relaxing)
- .debug_str     0x00000000000ca8a1       0xc9 ./Core/Src/stm32l4xx_it.o
+ .debug_str     0x00000000000ca8a0       0xc9 ./Core/Src/stm32l4xx_it.o
                                       0xc87d8 (size before relaxing)
- .debug_str     0x00000000000ca96a     0x1fee ./Core/Src/syscalls.o
+ .debug_str     0x00000000000ca969     0x1fee ./Core/Src/syscalls.o
                                       0xcac34 (size before relaxing)
- .debug_str     0x00000000000cc958       0x6b ./Core/Src/sysmem.o
+ .debug_str     0x00000000000cc957       0x6b ./Core/Src/sysmem.o
                                        0x6053 (size before relaxing)
- .debug_str     0x00000000000cc9c3       0xf2 ./Core/Src/system_stm32l4xx.o
+ .debug_str     0x00000000000cc9c2       0xf2 ./Core/Src/system_stm32l4xx.o
                                       0xc5040 (size before relaxing)
- .debug_str     0x00000000000ccab5       0x34 ./Core/Startup/startup_stm32l431rctx.o
+ .debug_str     0x00000000000ccab4       0x34 ./Core/Startup/startup_stm32l431rctx.o
                                          0x65 (size before relaxing)
- .debug_str     0x00000000000ccae9      0x9f7 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o
+ .debug_str     0x00000000000ccae8      0x9f7 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o
                                       0xc5af0 (size before relaxing)
- .debug_str     0x00000000000cd4e0      0x33a ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o
+ .debug_str     0x00000000000cd4df      0x33a ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o
                                       0xc57a1 (size before relaxing)
- .debug_str     0x00000000000cd81a      0x123 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o
+ .debug_str     0x00000000000cd819      0x123 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o
                                       0xc51b4 (size before relaxing)
- .debug_str     0x00000000000cd93d      0xdea ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o
+ .debug_str     0x00000000000cd93c      0xdea ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o
                                       0xc624c (size before relaxing)
- .debug_str     0x00000000000ce727       0xb8 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o
+ .debug_str     0x00000000000ce726       0xb8 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o
                                       0xc5577 (size before relaxing)
- .debug_str     0x00000000000ce7df      0x40c ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o
+ .debug_str     0x00000000000ce7de      0x40c ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o
                                       0xc5477 (size before relaxing)
- .debug_str     0x00000000000cebeb      0x381 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o
+ .debug_str     0x00000000000cebea      0x381 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o
                                       0xc5640 (size before relaxing)
- .debug_str     0x00000000000cef6c      0x52e ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o
+ .debug_str     0x00000000000cef6b      0x52e ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o
                                       0xc58cb (size before relaxing)
- .debug_str     0x00000000000cf49a      0x996 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_sd.o
+ .debug_str     0x00000000000cf499      0x996 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_sd.o
                                       0xc5d46 (size before relaxing)
- .debug_str     0x00000000000cfe30      0x54e ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.o
+ .debug_str     0x00000000000cfe2f      0x54e ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi.o
                                       0xc585e (size before relaxing)
- .debug_str     0x00000000000d037e      0x887 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o
+ .debug_str     0x00000000000d037d      0x887 ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o
                                       0xc5d98 (size before relaxing)
- .debug_str     0x00000000000d0c05      0x24b ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_sdmmc.o
+ .debug_str     0x00000000000d0c04      0x24b ./Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_sdmmc.o
                                       0xc5499 (size before relaxing)
- .debug_str     0x00000000000d0e50       0xe7 ./FATFS/App/fatfs.o
+ .debug_str     0x00000000000d0e4f       0xe7 ./FATFS/App/fatfs.o
                                       0xc90bc (size before relaxing)
- .debug_str     0x00000000000d0f37      0x154 ./FATFS/Target/bsp_driver_sd.o
+ .debug_str     0x00000000000d0f36      0x154 ./FATFS/Target/bsp_driver_sd.o
                                       0xc561f (size before relaxing)
- .debug_str     0x00000000000d108b       0xa0 ./FATFS/Target/sd_diskio.o
+ .debug_str     0x00000000000d108a       0xa0 ./FATFS/Target/sd_diskio.o
                                       0xc90af (size before relaxing)
- .debug_str     0x00000000000d112b       0xb5 ./Middlewares/Third_Party/FatFs/src/ff_gen_drv.o
+ .debug_str     0x00000000000d112a       0xb5 ./Middlewares/Third_Party/FatFs/src/ff_gen_drv.o
                                       0xc8fe7 (size before relaxing)
 
 .debug_frame    0x0000000000000000     0x61a8
