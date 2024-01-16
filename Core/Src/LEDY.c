@@ -8,7 +8,7 @@
 
 #include "LEDY.h"
 
-extern I2C_HandleTypeDef hi2c1;
+extern I2C_HandleTypeDef hi2c3;
 
 
 typedef struct{
@@ -63,21 +63,21 @@ void LEDChangeState(uint8_t device_no, uint8_t led_no, uint8_t state){
 
 	if(led_no > 3){
 		//address 6
-		HAL_I2C_Mem_Write(&hi2c1,
-							LEDS_ADDRESSES[device_no],
+		HAL_I2C_Mem_Write(&hi2c3,
+							(LEDS_ADDRESSES[device_no]<<1),
 							6,
 							1,
-							&rejestryLedow[device_no].higher,
+							&(rejestryLedow[device_no].higher),
 							1,
 							100);
 	}
 	else{
 		//address 5, lower LEDS
-		HAL_I2C_Mem_Write(&hi2c1,
-					LEDS_ADDRESSES[device_no],
+		HAL_I2C_Mem_Write(&hi2c3,
+					(LEDS_ADDRESSES[device_no]<<1),
 					5,
 					1,
-					&rejestryLedow[device_no].lower,
+					&(rejestryLedow[device_no].lower),
 					1,
 					100);
 	}
